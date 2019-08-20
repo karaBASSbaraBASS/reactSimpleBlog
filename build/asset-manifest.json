@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/reactSimpleBlog/static/css/main.dc7f18fe.chunk.css",
+    "main.js": "/reactSimpleBlog/static/js/main.5a59b25c.chunk.js",
+    "main.js.map": "/reactSimpleBlog/static/js/main.5a59b25c.chunk.js.map",
+    "runtime~main.js": "/reactSimpleBlog/static/js/runtime~main.970fcbc9.js",
+    "runtime~main.js.map": "/reactSimpleBlog/static/js/runtime~main.970fcbc9.js.map",
+    "static/js/2.ef2e3bfa.chunk.js": "/reactSimpleBlog/static/js/2.ef2e3bfa.chunk.js",
+    "static/js/2.ef2e3bfa.chunk.js.map": "/reactSimpleBlog/static/js/2.ef2e3bfa.chunk.js.map",
+    "index.html": "/reactSimpleBlog/index.html",
+    "precache-manifest.50566ba82e9c39e2ffe6f45d1cef81e3.js": "/reactSimpleBlog/precache-manifest.50566ba82e9c39e2ffe6f45d1cef81e3.js",
+    "service-worker.js": "/reactSimpleBlog/service-worker.js",
+    "static/css/main.dc7f18fe.chunk.css.map": "/reactSimpleBlog/static/css/main.dc7f18fe.chunk.css.map",
+    "static/media/data-random-squares.svg": "/reactSimpleBlog/static/media/data-random-squares.e6bce08b.svg",
+    "static/media/facebook-logo.svg": "/reactSimpleBlog/static/media/facebook-logo.6cd898e0.svg",
+    "static/media/instagram.svg": "/reactSimpleBlog/static/media/instagram.652a3a51.svg",
+    "static/media/twitter.svg": "/reactSimpleBlog/static/media/twitter.0fd0f820.svg"
+  }
+}
