@@ -1,53 +1,38 @@
 import axios from 'axios';
 import _ from 'lodash';
 import React from 'react';
+import SingleComment from './SingleComment';
+import CommentForm from './CommentForm';
 import { connect } from 'react-redux';
-import { fetchOnePost, deleteOnePost } from '../actions/posts_actions';
-import imageStub from '../assets/img/matt.jpg'
+import { fetchOnePost } from '../actions/posts_actions';
 import {
     Container,
     Comment,
+    Button,
+    Header
 } from 'semantic-ui-react';
 
 class PostsShow extends React.Component {
     componentDidMount() {
         const { id } = this.props.match.params;
-        console.log(id)
         axios.get(`https://simple-blog-api.crew.red/posts/${id}?_embed=comments`)
         .then(result=>{
             this.props.fetchOnePost(result);
         })
     }
-
-    onDeleteClick() {
-        const { id } = this.props.match.params;
-
-        this.props.deletePost(id, () => {
-            this.props.history.push('/');
-        });
-    }
-    renderComents() {
+    
+    renderComents = () => {
         return _.map(this.props.post.comments, id=> {
-            console.log(id)
             return(
-                <Container text>
-                <Comment key={ id }>
-                    <Comment.Avatar src={imageStub} />
-                    <Comment.Content>
-                    <Comment.Author as='a'>UserName</Comment.Author>
-                    <Comment.Metadata>
-                        <div>Today at 5:42PM</div>
-                    </Comment.Metadata>
-                    <Comment.Text>{id.body}</Comment.Text>
-                    <Comment.Actions>
-                        <Comment.Action>Reply</Comment.Action>
-                    </Comment.Actions>
-                    </Comment.Content>
-                </Comment>
-                </Container>
-            );
-        });
+                <SingleComment 
+                    key={id.id}
+                    id={id.id}
+                    body={id.body}
+                />
+                );
+            });
     }
+    
     render() {
         const { post } = this.props;
         if(!post) {
@@ -65,8 +50,21 @@ class PostsShow extends React.Component {
                     <Container text>
                         <h3>{post.title}</h3>
                         <p>{post.body}</p>
+                    
+                        <Comment.Group>
+                            <Header as='h3' dividing>
+                            Comments
+                            </Header>
+                            { this.renderComents() }
+                        </Comment.Group>
+
+                        <CommentForm id={this.props.match.params.id}/>
                     </Container>
-                    { this.renderComents() }
+                    <Container text>
+                        <div className="editPost">
+                            <Button content='Edit Entire Post' labelPosition='left' icon='edit' color='green' floated='right'/>
+                        </div>
+                    </Container>
                 </React.Fragment>
             )
         }
@@ -78,4 +76,4 @@ const mapStateToProps = (state) => {
     };
 };
   
-export default connect(mapStateToProps, { fetchOnePost, deleteOnePost })(PostsShow);
+export default connect(mapStateToProps, { fetchOnePost })(PostsShow);

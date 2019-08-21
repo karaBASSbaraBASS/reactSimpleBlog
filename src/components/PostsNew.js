@@ -1,4 +1,8 @@
 import React from 'react';
+import {
+    Form,
+    Button
+} from 'semantic-ui-react';
 
 class PostsNew extends React.Component {
     render() {
@@ -6,9 +10,9 @@ class PostsNew extends React.Component {
             <React.Fragment>
                 <h1>Create post Page!</h1>
                 <Form reply>
-                        <Form.TextArea />
-                        <Button content='Add Reply' labelPosition='left' icon='edit' primary />
-                    </Form>
+                    <Form.TextArea />
+                    <Button content='Add Reply' labelPosition='left' icon='edit' primary />
+                </Form>
             </React.Fragment>
         )
     }

@@ -1,10 +1,13 @@
 import axios from 'axios';
 
-export function fetchPosts() {
-    const request = axios.get(`/posts/${ID}?_embed=comments`);
-  
-    return {
-      type: FETCH_COMMENTS,
-      payload: request
+export function createComment(values) {
+  console.log(values)
+  axios.post(`https://simple-blog-api.crew.red/comments`, values)
+  .then(resp => {
+      console.log(resp.data);
+      return {
+        type: 'CREATE_COMMENT',
+        payload: resp.data
     };
-  }      
+  })
+}

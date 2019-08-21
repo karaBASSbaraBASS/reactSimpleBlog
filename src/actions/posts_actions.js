@@ -1,6 +1,3 @@
-import axios from 'axios';
-import _ from 'lodash';
-
 export function fetchPosts(result) {
     return {
         type: 'FETCH_POSTS',
