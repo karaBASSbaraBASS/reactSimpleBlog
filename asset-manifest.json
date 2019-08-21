@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/reactSimpleBlog/static/css/main.80deda7c.chunk.css",
-    "main.js": "/reactSimpleBlog/static/js/main.dd168356.chunk.js",
-    "main.js.map": "/reactSimpleBlog/static/js/main.dd168356.chunk.js.map",
+    "main.js": "/reactSimpleBlog/static/js/main.16081fbd.chunk.js",
+    "main.js.map": "/reactSimpleBlog/static/js/main.16081fbd.chunk.js.map",
     "runtime~main.js": "/reactSimpleBlog/static/js/runtime~main.970fcbc9.js",
     "runtime~main.js.map": "/reactSimpleBlog/static/js/runtime~main.970fcbc9.js.map",
     "static/js/2.eb1a70e0.chunk.js": "/reactSimpleBlog/static/js/2.eb1a70e0.chunk.js",
     "static/js/2.eb1a70e0.chunk.js.map": "/reactSimpleBlog/static/js/2.eb1a70e0.chunk.js.map",
     "index.html": "/reactSimpleBlog/index.html",
-    "precache-manifest.a1ac0e6aa335fd33bd588b82f083e043.js": "/reactSimpleBlog/precache-manifest.a1ac0e6aa335fd33bd588b82f083e043.js",
+    "precache-manifest.9ecc418a0d7ddb15c19da2b6ff1f49f8.js": "/reactSimpleBlog/precache-manifest.9ecc418a0d7ddb15c19da2b6ff1f49f8.js",
     "service-worker.js": "/reactSimpleBlog/service-worker.js",
     "static/css/main.80deda7c.chunk.css.map": "/reactSimpleBlog/static/css/main.80deda7c.chunk.css.map",
     "static/media/data-random-squares.svg": "/reactSimpleBlog/static/media/data-random-squares.e6bce08b.svg",
